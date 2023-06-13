@@ -10,17 +10,19 @@ function openNav() {
   
   //  Mobile-Carousel-Code
    
-   var images, arrayimage;
+   
+  
+  var images, arrayimage;
  
  
-images = ['https://images.unsplash.com/photo-1679312995862-b6a43db982d6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDEyfGFldTZyTC1qNmV3fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60', 'https://images.unsplash.com/photo-1623491351896-073b656b4205?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDQ0fGFldTZyTC1qNmV3fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60', 'https://plus.unsplash.com/premium_photo-1674049760153-144f4dc9208c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDcyfGFldTZyTC1qNmV3fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60', 'https://images.unsplash.com/photo-1670672950186-06319ae47429?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE0N3xhZXU2ckwtajZld3x8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60','https://images.unsplash.com/photo-1665095111931-fc4fa813e21c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDIwN3xhZXU2ckwtajZld3x8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60','https://images.unsplash.com/photo-1654267288787-a571aecf0505?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDQ0M3xhZXU2ckwtajZld3x8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60','https://images.unsplash.com/photo-1588588256701-69dcfe4043c6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDQ5OHxhZXU2ckwtajZld3x8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60','https://images.unsplash.com/photo-1646148707098-a27b818d5c95?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDcxOXxhZXU2ckwtajZld3x8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60'];
-let element_showing_image = document.getElementById('showing-image');
-arrayimage = images.shift();
-element_showing_image.setAttribute("src", arrayimage);
-images.push(arrayimage);
+ images = ['https://images.unsplash.com/photo-1679312995862-b6a43db982d6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDEyfGFldTZyTC1qNmV3fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60', 'https://images.unsplash.com/photo-1623491351896-073b656b4205?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDQ0fGFldTZyTC1qNmV3fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60', 'https://plus.unsplash.com/premium_photo-1674049760153-144f4dc9208c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDcyfGFldTZyTC1qNmV3fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60', 'https://images.unsplash.com/photo-1670672950186-06319ae47429?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE0N3xhZXU2ckwtajZld3x8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60','https://images.unsplash.com/photo-1665095111931-fc4fa813e21c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDIwN3xhZXU2ckwtajZld3x8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60','https://images.unsplash.com/photo-1654267288787-a571aecf0505?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDQ0M3xhZXU2ckwtajZld3x8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60','https://images.unsplash.com/photo-1588588256701-69dcfe4043c6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDQ5OHxhZXU2ckwtajZld3x8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60','https://images.unsplash.com/photo-1646148707098-a27b818d5c95?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDcxOXxhZXU2ckwtajZld3x8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60'];
+ let element_showing_image = document.getElementById('showing-image');
+ arrayimage = images.shift();
+  element_showing_image.setAttribute("src", arrayimage);
+ images.push(arrayimage);
  
  
-document.getElementById('next-btn').addEventListener('click', (event) => {
+ document.getElementById('next-btn').addEventListener('click', (event) => {
   let element_showing_image2 = document.getElementById('showing-image');
   arrayimage = images.shift();
   element_showing_image2.setAttribute("src", arrayimage);
@@ -70,8 +72,8 @@ var slides = document.querySelectorAll('.slide');
 		}
 
 		
-            document.getElementById('forward').addEventListener('click', nextSlide);
-            document.getElementById('back').addEventListener('click', previousSlide);
+        document.getElementById('forward').addEventListener('click', nextSlide);
+        document.getElementById('back').addEventListener('click', previousSlide);
             
         function autoForward() {
          timer = setInterval(nextSlide, 1000);
