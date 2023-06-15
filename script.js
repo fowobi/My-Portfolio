@@ -216,99 +216,6 @@ document.getElementById('button-mo').addEventListener('click', (event) => {
 
 
 
-// var shopping_array, item, custom_item;
- 
-// function getNumberOrString(value) {
-//   // Convert a string value to a number if possible
-//   let number_value = Number(value);
-//   if (Number.isNaN(number_value)) {
-//     return value
-//   } else {
-//     return number_value
-//   }
-// }
- 
-// // Describe this function...
-// function reset_array() {
-//   if(--window.LoopTrap <= 0) throw "Infinite loop.";
-//   shopping_array = [];
-// }
- 
-// // Describe this function...
-// function reset_list() {
-//   if(--window.LoopTrap <= 0) throw "Infinite loop.";
-//   let element_shopping_list = document.getElementById('shopping-list');
-//   element_shopping_list.replaceChildren();
-// }
-//  // Describe this function...
-// function build_shopping_list() {
-//   if(--window.LoopTrap <= 0) throw "Infinite loop.";
-//   shopping_array.forEach((item) => {
-//     let element_shopping_list2 = document.getElementById('shopping-list');
-//     let new_li = document.createElement('li');
-//     new_li.innerText = item;
- 
-//     new_li.addEventListener('click', (event) => {
-//       new_li.setAttribute("class", 'strikethrough');
- 
-//     });
-//     element_shopping_list2.appendChild(new_li);
-//   });
-// }
-// // Describe this function...
-// function reset_build_list() {
-//   if(--window.LoopTrap <= 0) throw "Infinite loop.";
-//   reset_list();
-//   build_shopping_list();
-// }
-
-// reset_array();
-// document.getElementById('btn-eggs').addEventListener('click', (event) => {
-//   shopping_array.push('Eggs');
-//   reset_build_list();
- 
-// });
-// document.getElementById('btn-bacon').addEventListener('click', (event) => {
-//   shopping_array.push('Bacon');
-//   reset_build_list();
- 
-// });
-// document.getElementById('btn-bread').addEventListener('click', (event) => {
-//   shopping_array.push('Bread');
-//   reset_build_list();
- 
-// });
-// document.getElementById('btn-other').addEventListener('click', (event) => {
-//   custom_item = getNumberOrString(document.getElementById('input-ingredients').value);
-//   if (custom_item != 0) {
-//     shopping_array.push(getNumberOrString(document.getElementById('input-ingredients').value));
-//     reset_build_list();
-//   }
- 
-// });
-// document.getElementById('btn-remove').addEventListener('click', (event) => {
-//   shopping_array.pop();
-//   reset_build_list();
- 
-// });
-// document.getElementById('btn-reset').addEventListener('click', (event) => {
-//   reset_array();
-//   reset_list();
- 
-// });
-
-
-
-
-
-
-
-
-
-
-
-
-
 var shopping_array, item, custom_item;
  
 function getNumberOrString(value) {
@@ -330,14 +237,14 @@ function reset_array() {
 // Describe this function...
 function reset_list() {
   if(--window.LoopTrap <= 0) throw "Infinite loop.";
-  let element_shopping_list = document.getElementById('shopping-list-des');
+  let element_shopping_list = document.getElementById('shopping-list');
   element_shopping_list.replaceChildren();
 }
  // Describe this function...
 function build_shopping_list() {
   if(--window.LoopTrap <= 0) throw "Infinite loop.";
   shopping_array.forEach((item) => {
-    let element_shopping_list2 = document.getElementById('shopping-list-des');
+    let element_shopping_list2 = document.getElementById('shopping-list');
     let new_li = document.createElement('li');
     new_li.innerText = item;
  
@@ -356,35 +263,35 @@ function reset_build_list() {
 }
 
 reset_array();
-document.getElementById('btn-eggs-des').addEventListener('click', (event) => {
+document.getElementById('btn-eggs').addEventListener('click', (event) => {
   shopping_array.push('Eggs');
   reset_build_list();
  
 });
-document.getElementById('btn-bacon-des').addEventListener('click', (event) => {
+document.getElementById('btn-bacon').addEventListener('click', (event) => {
   shopping_array.push('Bacon');
   reset_build_list();
  
 });
-document.getElementById('btn-bread-des').addEventListener('click', (event) => {
+document.getElementById('btn-bread').addEventListener('click', (event) => {
   shopping_array.push('Bread');
   reset_build_list();
  
 });
-document.getElementById('btn-other-des').addEventListener('click', (event) => {
-  custom_item = getNumberOrString(document.getElementById('input-ingredients-des').value);
+document.getElementById('btn-other').addEventListener('click', (event) => {
+  custom_item = getNumberOrString(document.getElementById('input-ingredients').value);
   if (custom_item != 0) {
-    shopping_array.push(getNumberOrString(document.getElementById('input-ingredients-des').value));
+    shopping_array.push(getNumberOrString(document.getElementById('input-ingredients').value));
     reset_build_list();
   }
  
 });
-document.getElementById('btn-remove-des').addEventListener('click', (event) => {
+document.getElementById('btn-remove').addEventListener('click', (event) => {
   shopping_array.pop();
   reset_build_list();
  
 });
-document.getElementById('btn-reset-des').addEventListener('click', (event) => {
+document.getElementById('btn-reset').addEventListener('click', (event) => {
   reset_array();
   reset_list();
  
@@ -393,7 +300,36 @@ document.getElementById('btn-reset-des').addEventListener('click', (event) => {
 
 
 
- 
+
+
+
+
+
+
+
+
+
+ let date = document.getElementById("date");
+ let hrs = document.getElementById("hrs");
+ let mins = document.getElementById("mins");
+ let sec = document.getElementById("sec");
+
+ setInterval(() => {
+    let currentTime = new Date();
+    let options = {
+      weekday: "long",
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+    };
+   date.innerHTML = currentTime.toLocaleDateString(undefined, options);
+   hrs.innerHTML =
+     (currentTime.getHours() < 10 ? "0" : "") + currentTime.getHours();
+   mins.innerHTML =
+     (currentTime.getMinutes() < 10 ? "0" : "") + currentTime.getMinutes();
+   sec.innerHTML =
+     (currentTime.getSeconds() < 10 ? "0" : "") + currentTime.getSeconds();
+ }, 1000);
 
  
  

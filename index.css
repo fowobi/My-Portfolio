@@ -915,6 +915,7 @@ margin-left: 1rem;
         font-size: 24px;
     }
     .desk-pro-carou{
+        font-size: 1.5rem;
         font-weight: bolder;
         color: var(--Royal-blue);
         margin-bottom: 2rem;
@@ -969,6 +970,14 @@ margin-left: 1rem;
    .control-btn:hover{
     background-color: red;
    }
+   .des-earn-expen{
+    border: 2px solid var(--Royal-blue);
+        display: grid;
+        margin-top: 2rem;
+        width: 350px;
+        height: 400px;
+        margin-left: 4rem;
+   }
 
    .desk-earn-exp-cont{
     display: flex;
@@ -990,41 +999,45 @@ margin-left: 1rem;
     border-radius: 0.5rem;
     font-size: larger;
 }
- .prod-shop-container{
+ .clock-container{
     display: flex;
     border:5px solid red ;
     width: 55rem;
     margin-left: 18rem;
     margin-top: 2rem;
 }
- .product-container{
-    margin-top: 2rem;
+.desk-clock{
+    font-size: 1.5rem;
     margin-left: 2rem;
+    color: var(--Royal-blue);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
- .desk-pro-center{
-    margin-left: 4rem;
+.day-clock{
+    
+    width: 50rem;
+    margin-left: 6rem;
+    background: rgba(235,0,255,0.11);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    backdrop-filter: blur(40px);
     
 }
-.desk-pro-remove-btn{
-    height: 2rem;
-    width: 6rem;
-    border-radius: 0.3rem;
-    background-color: var(--Royal-blue);
-    color: var(--White);
-
-    
+.day-clock span{
+    font-size: 30px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    font-weight: bolder;
+    color: var(--Royal-blue);
 }
-.desk-pro-reset-btn{
-    height: 2rem;
-    width: 6rem;
-    margin-left: 1rem;
-    border-radius: 0.3rem;
-    background-color: var(--Royal-blue);
-    color: var(--White);
+.digital-clock p{
+    margin-left: 2rem;
+    font-size: large;
+    margin-bottom: 1rem;
 }
-   
-    
-
 
 }
        
