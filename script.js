@@ -300,16 +300,7 @@ document.getElementById('btn-reset').addEventListener('click', (event) => {
 
 
 
-
-
-
-
-
-
-
-
-
- let date = document.getElementById("date");
+let date = document.getElementById("date");
  let hrs = document.getElementById("hrs");
  let mins = document.getElementById("mins");
  let sec = document.getElementById("sec");
@@ -317,9 +308,9 @@ document.getElementById('btn-reset').addEventListener('click', (event) => {
  setInterval(() => {
     let currentTime = new Date();
     let options = {
-      weekday: "long",
+      weekday: "short",
       year: "numeric",
-      month: "long",
+      month: "short",
       day: "numeric",
     };
    date.innerHTML = currentTime.toLocaleDateString(undefined, options);

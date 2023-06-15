@@ -42,8 +42,8 @@ body{
         margin-bottom: 18px;
         height: 12rem;
         margin-top: -2rem;
-        width: 495px;
-        /* margin-left: 2rem; */
+        width: 517px;
+        /* margin-left: 1rem; */
         /* margin-right: 4rem; */
 }
 .mo-tosin-header{
@@ -130,7 +130,7 @@ a {
     border-bottom: 2px solid var(--Royal-blue);
     margin-top: 1rem;
     width: 86px;
-    margin-left: 9rem;
+    margin-left: 9.5rem;
 }
 
 .mo-resume{
@@ -183,7 +183,7 @@ color: var(--White);
     background-color: var(--White);
     height: 2rem;
     margin-top: 1.5rem;
-    width: 23.5rem;
+    width: 25rem;
     margin-bottom: 1.5rem;
     /* margin-left: 0.05rem; */
     
@@ -228,7 +228,7 @@ color: var(--White);
 footer{
     /* border: 5px solid blue; */
     background-color: var(--White);
-    width:495px ;
+    width:518px ;
     margin-bottom: 1rem;
 }
 /* mobile-resume code */
@@ -1015,7 +1015,7 @@ margin-left: 1rem;
 }
 .day-clock{
     
-    width: 50rem;
+    width: 70rem;
     margin-left: 6rem;
     background: rgba(235,0,255,0.11);
     display: flex;
