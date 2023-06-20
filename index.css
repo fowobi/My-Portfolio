@@ -1038,6 +1038,47 @@ margin-left: 1rem;
     font-size: large;
     margin-bottom: 1rem;
 }
+#fact {
+    display: none;
+}
+.row{
+    /* border: 5px solid blue; */
+    width: 55rem;
+    background: rgba(235, 0, 255, 0.11);
+    border-radius: 10px;
+    /* margin-top: 2rem; */
+    
+}
+.form-control{
+    margin-left: 7rem;
+    font-size: x-large;
+    margin-top: 0.5rem;
+    
+}
+.fact-p{
+    text-align: center;
+    margin-top: 0.5rem;
+    color: var(--Royal-blue);
+    font-size: larger;
+    font-weight: bolder;
+}
+.card-body{
+    color: var(--Royal-blue);
+    font-size: larger;
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: bolder;
+}
+.num-text-p{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    /* border: 5px solid red; */
+    width: 22rem;
+    font-size: 17px;
+
+}
 
 }
        
