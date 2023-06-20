@@ -343,7 +343,42 @@ function getFactAjax() {
     .catch((err) => console.log(err));
 }
 
+//mobile-calendar-code
+const dates = document.getElementById("dates");
+const days = document.getElementById("days");
+const month = document.getElementById("months");
+const year = document.getElementById("years");
 
+const today = new Date();
+
+const weekDays = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+];
+const allMonths = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
+];
+
+dates.innerHTML = (today.getDate() < 10 ? "0" : "") + today.getDate();
+days.innerHTML = weekDays[today.getDay()];
+months.innerHTML = allMonths[today.getMonth()];
+years.innerHTML = today.getFullYear();
 
 
  

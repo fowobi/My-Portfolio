@@ -47,9 +47,10 @@ body{
         /* margin-right: 4rem; */
 }
 .mo-tosin-header{
-    margin-left: 2rem;
+    margin-left: 4rem;
     font-size: 32px;
     font-weight: bolder;
+    color: var(--Royal-blue);
 }
 .mo-tod::before{
     content: "";
@@ -116,7 +117,7 @@ a {
     background-color: var(--Light-beige);
     display: grid;
     width: 75vw;
-    margin-left: 2rem;
+    margin-left: 3.5rem;
     margin-top: -8rem;
     /* border: 5px solid black; */
 
@@ -238,6 +239,7 @@ footer{
     font-size: 36px;
     font-weight: bolder;
     margin-right: 5rem;
+    color: var(--Royal-blue);
 }
 .res::before{
        margin-left: 1rem;
@@ -256,11 +258,12 @@ footer{
     margin-top: 2rem;
 }
 .re-expe{
+    color: var(--Royal-blue);
     font-size: 20px;
     font-weight: 900;
     margin-left: 2rem;
 }
-.re-download{
+/* .re-download{
     font-size: 18px;
     border-radius: 8rem;
     background-color: var(--Royal-blue);
@@ -268,11 +271,11 @@ footer{
     width: 9rem;
     height: 2rem;
     
-}
-.re-download:hover{
+} */
+/* .re-download:hover{
     background-color: transparent;
     color: var(--Royal-blue);
-}
+} */
 .position{
     /* border: solid red; */
     background-color: var(--White);
@@ -282,18 +285,19 @@ footer{
     margin-left: 2rem;
 }
 .present{
+    
     margin-left: 1rem;
     font-size: large;
     font-weight: bolder;
     color: var(--Royal-blue);
     /* margin-top: 2rem; */
 }
-.j{
+.j{  color: var(--Royal-blue);
     margin-left: 1rem;
     margin-top: 0.5rem;
     font-weight: bold;
 }
-.c{
+.c{ color: var(--Royal-blue);
     margin-left: 1rem;
     font-weight: bold;
 }
@@ -336,13 +340,13 @@ background-color: var(--White);
         width: 25rem;
         margin-left: 2rem;
 }
-.set{
+.set{ color: var(--Royal-blue);
     margin-left: 1rem;
     font-size: 24px;
     font-weight: bolder;
 }
-.lang{
-margin-left: 1rem;
+.lang{ color: var(--Royal-blue);
+    margin-left: 1rem;
     font-size: 24px;
     font-weight: bolder;
 }
@@ -412,6 +416,7 @@ margin-left: 1rem;
 }
 /* mobile-project-code */
 .projects{
+    color: var(--Royal-blue);
     text-align: center;
     font-size: 28px;
     font-weight: bolder;
@@ -439,6 +444,7 @@ margin-left: 1rem;
     border: 5px solid var(--Black);
 }
 .carousel{
+    color: var(--Royal-blue);
     text-align: center;
     margin-top: 2rem;
     font-size: 24px;
@@ -468,6 +474,7 @@ margin-left: 1rem;
 }
 
 .earn{
+    color: var(--Royal-blue);
     text-align: center;
     margin-top: 3rem;
     font-size: 18px;
@@ -519,6 +526,7 @@ margin-left: 1rem;
     margin-left: 3rem;
 }
 .prod-shop{
+    color: var(--Royal-blue);
     text-align: center;
     margin-top: 2rem;
     font-size: 18px;
@@ -594,6 +602,50 @@ margin-left: 1rem;
    font-size: 16px;
    border-radius: 7rem;
 }
+.mini-calendar{
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 20px;
+    font-weight: bolder;
+    color: var(--Royal-blue);
+    
+}
+
+.calendar {
+    border: 5px solid black;
+    margin-left: 3rem;
+    width: 400px;
+    height: 250px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    color:var(--Royal-blue);
+}
+.left,
+.right {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    flex-direction: column;
+}
+.right {
+    background: #f4351e;
+    color: #fff;
+    width: 42%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.left {
+    width: 58%;
+}
+
+
+
     /* responsive */
 @media screen and (min-width:900px) {
     body{
