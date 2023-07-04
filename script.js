@@ -298,7 +298,7 @@ document.getElementById('btn-reset').addEventListener('click', (event) => {
 });
 
 
-
+//desktop-code digital clock
 
 let date = document.getElementById("date");
  let hrs = document.getElementById("hrs");
@@ -324,15 +324,18 @@ let date = document.getElementById("date");
 
  
  
-
+//desktop-code fact number
 
 let fact = document.querySelector("#fact");
 let factText = document.querySelector("#factText");
 let numberInput = document.querySelector("#numberInput");
 numberInput.addEventListener("input", getFactAjax);
+
 function getFactAjax() {
   let number = numberInput.value;
-  fetch("http://numbersapi.com/" + number)
+   let url = "http://numbersapi.com/" + number;
+  
+   fetch(url)
     .then((response) => response.text())
     .then((data) => {
       if (number != "") {
@@ -341,7 +344,12 @@ function getFactAjax() {
       }
     })
     .catch((err) => console.log(err));
+
 }
+
+
+
+
 
 //mobile-calendar-code
 const dates = document.getElementById("dates");
